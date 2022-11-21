@@ -1,1 +1,22 @@
 #Programmed in the Inform6 language,
+
+story telling
+-------
+setup:
+viewpoint character
+identity character
+key character
+
+conflict:
+goal
+motive
+foe character
+
+climax:
+climax character?
+climax conflicts problems
+climax risks dangers
+climax struggles
+
+Resolution:
+residual resolution emotion
