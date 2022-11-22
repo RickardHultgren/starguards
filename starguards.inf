@@ -1,22 +1,189 @@
-#Programmed in the Inform6 language,
+!Programmed in the Inform6 language,
+Constant Story "The Star Guards";
+Constant Headline "^An Interactive Fiction^";
 
-story telling
--------
-setup:
-viewpoint character
-identity character
-key character
+Include "Parser";
+Include "VerbLib";
 
-conflict:
-goal
-motive
-foe character
+Object Generator "story"
+    with description
+        "Commands^For story concept write conecpt.",
+has light;
 
-climax:
-climax character?
-climax conflicts problems
-climax risks dangers
-climax struggles
 
-Resolution:
-residual resolution emotion
+
+
+
+
+
+
+
+
+
+
+Object Setup "Setup" Generator
+    with description
+        "This is the setup.",
+has static concealed supporter enterable;
+
+
+
+
+
+
+
+
+Class   viewpointCharacter
+ has    animate
+ with   !state CHAIR-STATE,
+        name "viewpointCharacter" "kitty" "cat",
+        !description [;
+        !    "What a beautiful kitten ", (the) self, " is. Why,
+        !    it's quite definitely your favourite of the pair, and
+        !    much prettier than that naughty ",
+        !    (name) self.other-kitten, ".";
+        !]
+;
+
+viewpointCharacter  me "me" Generator;
+ !with   name "white",
+  !      this-kittens-turn false,
+   !     other-kitten black-kitten;
+
+
+
+
+
+
+
+Class   IDCharacter
+ has    animate
+ with   !state CHAIR-STATE,
+        name "identityCharacter" "kitty" "cat",
+        !description [;
+        !    "What a beautiful kitten ", (the) self, " is. Why,
+        !    it's quite definitely your favourite of the pair, and
+        !    much prettier than that naughty ",
+        !    (name) self.other-kitten, ".";
+        !]
+;
+
+IDCharacter  person1 "person1" Generator;
+! with   name "white",
+ !       this-kittens-turn false,
+  !      other-kitten black-kitten;
+
+
+
+
+
+
+
+
+Class   keyCharacter
+ has    animate
+ with   !state CHAIR-STATE,
+        name "keyCharacter" "kitty" "cat",
+        !description [;
+        !    "What a beautiful kitten ", (the) self, " is. Why,
+        !     it's quite definitely your favourite of the pair, and
+        !     much prettier than that naughty ",
+        !     (name) self.other-kitten, ".";
+        !]
+;
+
+keyCharacter  key "key" Generator;
+! with   name "white",
+ !       this-kittens-turn false,
+  !      other-kitten black-kitten;
+
+
+
+
+
+Class   foeCharacter
+ has    animate
+ with   !state CHAIR-STATE,
+        name "foeCharacter" "foe in conflict",
+        !description [;
+        !    "What a beautiful kitten ", (the) self, " is. Why,
+        !     it's quite definitely your favourite of the pair, and
+        !     much prettier than that naughty ",
+        !     (name) self.other-kitten, ".";
+        !]
+;
+
+foeCharacter  foe "foe" Generator;
+! with   name "white",
+ !       this-kittens-turn false,
+  !      other-kitten black-kitten;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Object Conflict "Conflict" Generator
+    with description
+        "This is the conflict.",
+has static concealed supporter enterable;
+
+Object Goal "Goal" Conflict
+    with description
+        "This is the starting location.",
+has static concealed supporter enterable;
+
+Object Motive "Motive" Conflict
+    with description
+        "This is the starting location.",
+has static concealed supporter enterable;
+
+
+
+
+Object Climax "Climax" Generator
+    with description
+        "This is the starting location.",
+has light;
+
+Object Risk "Danger" Climax
+    with description
+        "This is the starting location.",
+has light;
+
+Object Struggle "Struggle" Climax
+    with description
+        "This is the starting location.",
+has light;
+
+
+
+
+
+
+
+Object Resolution "residual resolution emotion" Generator
+    with description
+        "This is the starting location.",
+has static concealed supporter enterable;
+
+
+[ Initialise;
+    location = Generator;
+    "^^^Welcome to Inform 6!^";
+];
+
+Include "Grammar";
+
+
+
+
