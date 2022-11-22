@@ -109,13 +109,14 @@ foeCharacter  foe "foe" Generator;
 
 Object Setup "Setup" Generator
     with 
-				concept "",
-				description
-        "This is the setup.",
+			description "This is the setup.",
+      orders [;
+			blabla: "~The replicator is unable to oblige.~";
+       ],
 has static concealed supporter enterable;
 
 
-
+Verb 'sss' * -> blabla;
 
 
 
@@ -128,7 +129,7 @@ has static concealed supporter enterable;
 
 
 Object Conflict "Conflict" Generator
-    with concept "",
+    with concept "Conflict concept",
 				description
         "This is the conflict.",
 has static concealed supporter enterable;
@@ -192,7 +193,7 @@ has static concealed supporter enterable;
 
 [ Initialise;
     location = Generator;
-    "^^^Welcome to Inform 6!^";
+    "^^^This is the ^";
 ];
 
 Include "Grammar";
