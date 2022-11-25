@@ -12,6 +12,8 @@ Object Generator "story"
 
 has light;
 
+Global command = 0 ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
@@ -109,10 +111,14 @@ foeCharacter  foe "foe" Generator;
 
 
 
-Object Setup "Setup" Generator
+Object Setup "Setup" 
     with 
-			description "This is the setup.",
-has light enterable;
+			description 
+[;
+				if (command==1) print "setup concept" ;
+				if (command==0) print "setup" ;
+			],
+has light;
 
 
 
@@ -125,11 +131,11 @@ has light enterable;
 
 
 
-Object Conflict "Conflict" Generator
+Object Conflict "Conflict" 
     with concept "Conflict concept",
 				description
         "This is the conflict.",
-has static concealed supporter enterable;
+has light;
 
 Object Goal "Goal" Conflict
     with concept "",
@@ -189,11 +195,9 @@ Object Change "Change" Resolution
 has static concealed supporter enterable;
 
 [ ConceptSub;
-        "start going...";
-location = Setup;
+command = 1;
 PlayerTo(Setup,2);
-
-	PlayerTo(Conflict,2);
+PlayerTo(Conflict,2);
 ];
 
 Verb "concept" * -> Concept;

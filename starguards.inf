@@ -112,7 +112,7 @@ Object Setup "Setup" Generator
 				concept "",
 				description
         "This is the setup.",
-has static concealed supporter enterable;
+has ~light;
 
 
 
