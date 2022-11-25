@@ -4,10 +4,12 @@ Constant Headline "^An Interactive Fiction^";
 
 Include "Parser";
 Include "VerbLib";
+Include "Grammar";
 
 Object Generator "story"
     with description
         "Commands^For story concept write conecpt.",
+
 has light;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -110,13 +112,8 @@ foeCharacter  foe "foe" Generator;
 Object Setup "Setup" Generator
     with 
 			description "This is the setup.",
-      orders [;
-			blabla: "~The replicator is unable to oblige.~";
-       ],
-has static concealed supporter enterable;
+has light enterable;
 
-
-Verb 'sss' * -> blabla;
 
 
 
@@ -191,12 +188,22 @@ Object Change "Change" Resolution
         "This is the starting location.",
 has static concealed supporter enterable;
 
+[ ConceptSub;
+        "start going...";
+location = Setup;
+PlayerTo(Setup,2);
+
+	PlayerTo(Conflict,2);
+];
+
+Verb "concept" * -> Concept;
+
 [ Initialise;
     location = Generator;
     "^^^This is the ^";
 ];
 
-Include "Grammar";
+
 
 
 
