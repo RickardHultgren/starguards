@@ -210,8 +210,23 @@ PlayerTo(Change,2);
 ];
 
 
-[ StorytSub;
+[ StorySub;
 command = 2;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+
+[ ExerciseSub;
+command = 3;
 PlayerTo(Setup,2);
 PlayerTo(Conflict,2,2);
 PlayerTo(Goal,2);
@@ -226,6 +241,7 @@ PlayerTo(Change,2);
 
 Verb "concept" * -> Concept;
 Verb "story" * -> Story;
+Verb "exercise" * -> Exercise;
 
 [ Initialise;
     location = Generator;
