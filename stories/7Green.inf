@@ -53,7 +53,7 @@ Object Conflict "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The chemist feels enthusiasm. ;
+				if (command==1) print "The chemist feels enthusiasm." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -115,7 +115,7 @@ Object Climax "Climax"
 				if (command==0) print "" ;
 
 !Concept
-				if (command==1) print "he energizes and converts tension into relaxation."" ;
+				if (command==1) print "he energizes and converts tension into relaxation." ;
 
 !Story
  				if (command==2) print "Story" ;
