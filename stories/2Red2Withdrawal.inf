@@ -25,13 +25,18 @@ Object Setup "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "
+The scout goes to the stomach. The Captain: Feel what it feels like to be here. Feel what it feels like to be here. Feel what it feels like to be here." ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "You want to retreat and feel Disgust with the asteroids: The upper lip and the wings of the nose are pulled up. Focus on one point in the stomach. Indent this point. Say "Ble": 1, 2, 3: Ble, Ble, Ble." ;  !
+
+!Joke
+if (command==4) print "Type: Glorified retaliation. Benign: Retribution. Violation: Self-forbidden behavior." ;  !
 ],
+ 
 has light;
 
 
@@ -49,156 +54,191 @@ Object Conflict "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "In the stomach he looks out, and glimpses the asteroids." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "" ;  !
 ],
 has light;
 
-Object Goal "Goal" Conflict
+
+
+
+
+
+Object Goal "Goal" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The scout has to detect astreroids" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "" ;  !
 ],
 has light;
 
-Object Motive "Motive" Conflict
+
+
+
+
+Object Motive "Motive"
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The scout wants to have controll." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Climax "Climax" Generator
+
+
+
+
+Object Climax "Climax" 
+    with 
+			description 
+[;
+				if (command==0) print "" ;
+
+!Concept
+				if (command==1) print "He feels disgust at them." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "" ;  !
+],
+has light;
+
+
+
+
+
+
+Object Risk "Danger" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "He needs to sit down." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Risk "Danger" Climax
+
+
+
+Object Struggle "Struggle" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "He sits down on a fart pillow ." ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "" ;  !
 ],
 has light;
 
 
-Object Struggle "Struggle" Climax
+
+
+
+
+Object Resolution "residual resolution emotion" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "and feels embarrassment." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "" ;  !
 ],
 has light;
 
 
 
 
-Object Resolution "residual resolution emotion" Generator
+
+Object Emotion "residual resolution emotion" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "you feel embarrassment." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "" ;  !
 ],
 has light;
 
 
-Object Emotion "residual resolution emotion" Resolution
+
+
+
+
+
+Object Change "Change" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The captain fires the scout and replace him." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "" ;  !
 ],
 has light;
 
 
-Object Change "Change" Resolution
-    with 
-			description 
-[;
-				if (command==0) print "setup" ;
 
-!Concept
-				if (command==1) print "setup concept" ;
 
-!Story
- 				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
-],
-has light;
+
 
 
 [ ConceptSub;
 command = 1;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -213,7 +253,7 @@ PlayerTo(Change,2);
 [ StorySub;
 command = 2;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -228,7 +268,21 @@ PlayerTo(Change,2);
 [ ExerciseSub;
 command = 3;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+[ JokeSub;
+command = 4;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -241,7 +295,7 @@ PlayerTo(Change,2);
 
 Verb "concept" * -> Concept;
 Verb "story" * -> Story;
-Verb "exercise" * -> Exercise;
+Verb "joke" * -> Joke;
 
 [ Initialise;
     location = Generator;

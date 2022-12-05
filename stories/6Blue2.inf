@@ -25,13 +25,18 @@ Object Setup "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The Captain: What else? What else? What else?  " ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "Your face relaxes. Cheeks are pulled up. Focus on one point in the heart. Open the heart so that the light of the point is scattered in all directions. Say "thank you": 1, 2, 3: Thank you, thank you, thank you.
+" ;  !
+
+!Joke
+if (command==4) print "Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
 ],
+ 
 has light;
 
 
@@ -49,156 +54,193 @@ Object Conflict "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "After a rather powerful attack on asteroids, there are now only a few left. These are easy to destroy. " ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "What in what you're doing right now has to do with your purpose? How does it fulfill your purpose? How does it feel to fulfill the purpose? How does that sound? What does it look like? How does it feel to be touched? How heavy is it? Listen to the purpose." ;  !
 ],
 has light;
 
-Object Goal "Goal" Conflict
+
+
+
+
+
+Object Goal "Goal" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The marksman has to destroy the asteroids" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Pull the abdominal muscles backwards so that the small intestine is moved inward." ;  !
 ],
 has light;
 
-Object Motive "Motive" Conflict
+
+
+
+
+Object Motive "Motive"
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The marksman has to reduce the anger." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Climax "Climax" Generator
+
+
+
+
+Object Climax "Climax" 
+    with 
+			description 
+[;
+				if (command==0) print "" ;
+
+!Concept
+				if (command==1) print "The marksman is now moving to the heart to save cannon energy.  " ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Risk "Danger" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "From the heart, he can access the asteroids himself." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Risk "Danger" Climax
+
+
+
+Object Struggle "Struggle" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The marksman sends out radio signals that say: Use: Request from the Ship Transmitter to change the process. 1. 2. 3. Request from the Ship Transmitter to change the process. Request from the Ship Transmitter to change the process. " ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Struggle "Struggle" Climax
+
+
+
+
+Object Resolution "residual resolution emotion" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The shooter takes out a boxing glove and puts it on his right hand. The chemist pumps up the gauntlet which becomes colossally large. Then the shooter knocks down the asteroids one by one. Hit and miss," he says. Say: Hit, hit, miss. Hit, hit, miss. Hit, hit, miss. Respond to criticism.
+" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
 
 
-Object Resolution "residual resolution emotion" Generator
+
+Object Emotion "residual resolution emotion" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The captain feel happiness that the worst is over, and that you recognize that things are going in the right direction" ;
 
 !Story
- 				if (command==2) print "Story" ;
+ 				if (command==2) print "Request from the Ship Recipient to change criteria for context. 1. 2. 3. Request from the Ship Recipient to change context criteria. Request from the Ship Recipient to change criteria for context.
+All the spaceships involved are responding to the request." ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Emotion "residual resolution emotion" Resolution
+
+
+
+
+
+Object Change "Change" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The captain " ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Change "Change" Resolution
-    with 
-			description 
-[;
-				if (command==0) print "setup" ;
 
-!Concept
-				if (command==1) print "setup concept" ;
 
-!Story
- 				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
-],
-has light;
+
 
 
 [ ConceptSub;
 command = 1;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -213,7 +255,7 @@ PlayerTo(Change,2);
 [ StorySub;
 command = 2;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -228,7 +270,21 @@ PlayerTo(Change,2);
 [ ExerciseSub;
 command = 3;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+[ JokeSub;
+command = 4;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -241,7 +297,7 @@ PlayerTo(Change,2);
 
 Verb "concept" * -> Concept;
 Verb "story" * -> Story;
-Verb "exercise" * -> Exercise;
+Verb "joke" * -> Joke;
 
 [ Initialise;
     location = Generator;

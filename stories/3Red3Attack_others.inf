@@ -25,13 +25,18 @@ Object Setup "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The Captain: What do you know? What do you know? What do you know? 
+The scout then goes to the perineum." ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "Eyebrows are raised and parted from each other. The mouth opens. Focus on one point in the middle yard. Pull in the seat muscles so that the point is raised. Say No: 1, 2, 3: No, no, no. " ;  !
+
+!Joke
+if (command==4) print " Benign: No evil happens.Violation: Ambivalent between two assumptions." ;  !
 ],
+ 
 has light;
 
 
@@ -49,156 +54,191 @@ Object Conflict "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The scout is surprised by all the asteroids he sees. He's scared. " ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. " ;  !
 ],
 has light;
 
-Object Goal "Goal" Conflict
+
+
+
+
+
+Object Goal "Goal" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "He picks out devil-stick. Feeling ambivalent. With the angle pointers, he pinches his devil-stick which is also an office-rod." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Pull the abdominal muscles backwards so that the small intestine is moved inward." ;  !
 ],
 has light;
 
-Object Motive "Motive" Conflict
+
+
+
+
+Object Motive "Motive"
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The scout wants to have controll." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Climax "Climax" Generator
+
+
+
+
+Object Climax "Climax" 
+    with 
+			description 
+[;
+				if (command==0) print "" ;
+
+!Concept
+				if (command==1) print "He performs the devil-stick trick, tick-tock. Each time the command rod hits one of the angle pointers, a sound occurs in the rod. It sounds light or dark depending on which rod hits the rod. That is, as if it would be ambivalent about what tone it should have. The scout rolls a dice to decide which way to point. " ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Risk "Danger" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The shooter shoots in different directions. " ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Risk "Danger" Climax
+
+
+
+Object Struggle "Struggle" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The area around the ship is unknown to him. The chemist makes sure that there is fuel for laser beams in the cannon.  " ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Struggle "Struggle" Climax
+
+
+
+
+Object Resolution "residual resolution emotion" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The scout does not bother if other spaceships in the cluster meet." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
 
 
-Object Resolution "residual resolution emotion" Generator
+
+Object Emotion "residual resolution emotion" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "You as a captain feel ambivalent." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Emotion "residual resolution emotion" Resolution
+
+
+
+
+
+Object Change "Change" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The captain fires the scout and replace him." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Change "Change" Resolution
-    with 
-			description 
-[;
-				if (command==0) print "setup" ;
 
-!Concept
-				if (command==1) print "setup concept" ;
 
-!Story
- 				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
-],
-has light;
+
 
 
 [ ConceptSub;
 command = 1;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -213,7 +253,7 @@ PlayerTo(Change,2);
 [ StorySub;
 command = 2;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -228,7 +268,21 @@ PlayerTo(Change,2);
 [ ExerciseSub;
 command = 3;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+[ JokeSub;
+command = 4;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -241,7 +295,7 @@ PlayerTo(Change,2);
 
 Verb "concept" * -> Concept;
 Verb "story" * -> Story;
-Verb "exercise" * -> Exercise;
+Verb "joke" * -> Joke;
 
 [ Initialise;
     location = Generator;

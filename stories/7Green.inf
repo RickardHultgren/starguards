@@ -25,13 +25,17 @@ Object Setup "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The Captain: Was this what you wanted? Was this what you wanted? Was this what you wanted?" ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "Eyebrows are raised and parted from each other.  The mouth opens. Focus on one point in the middle yard. Pull out the seat muscles so that the point is lowered. Say Oh: 1, 2, 3: Oh, oh, oh. Your spaceship is retreating." ;  !
+
+!Joke
+if (command==4) print "Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
 ],
+ 
 has light;
 
 
@@ -49,156 +53,191 @@ Object Conflict "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The chemist feels enthusiasm. ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. " ;  !
 ],
 has light;
 
-Object Goal "Goal" Conflict
+
+
+
+
+
+Object Goal "Goal" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The chemist supplies the ship" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Pull the abdominal muscles backwards so that the small intestine is moved inward." ;  !
 ],
 has light;
 
-Object Motive "Motive" Conflict
+
+
+
+
+Object Motive "Motive"
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The scout wants the ship to work." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Climax "Climax" Generator
+
+
+
+
+Object Climax "Climax" 
+    with 
+			description 
+[;
+				if (command==0) print "" ;
+
+!Concept
+				if (command==1) print "he energizes and converts tension into relaxation."" ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Risk "Danger" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "to get signal" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Risk "Danger" Climax
+
+
+
+Object Struggle "Struggle" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "feeling good" ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
+!Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Struggle "Struggle" Climax
+
+
+
+
+Object Resolution "residual resolution emotion" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "He is present" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
 
 
-Object Resolution "residual resolution emotion" Generator
+
+Object Emotion "residual resolution emotion" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "enthusizasm" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Emotion "residual resolution emotion" Resolution
+
+
+
+
+
+Object Change "Change" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "setup concept" ;
+				if (command==1) print "The captain is very happy" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Exercise" ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Change "Change" Resolution
-    with 
-			description 
-[;
-				if (command==0) print "setup" ;
 
-!Concept
-				if (command==1) print "setup concept" ;
 
-!Story
- 				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
-],
-has light;
+
 
 
 [ ConceptSub;
 command = 1;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -213,7 +252,7 @@ PlayerTo(Change,2);
 [ StorySub;
 command = 2;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -228,7 +267,21 @@ PlayerTo(Change,2);
 [ ExerciseSub;
 command = 3;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+[ JokeSub;
+command = 4;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -241,7 +294,7 @@ PlayerTo(Change,2);
 
 Verb "concept" * -> Concept;
 Verb "story" * -> Story;
-Verb "exercise" * -> Exercise;
+Verb "joke" * -> Joke;
 
 [ Initialise;
     location = Generator;

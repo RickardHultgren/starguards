@@ -25,15 +25,17 @@ Object Setup "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost:
-Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward
-" ;
+				if (command==1) print "The captain shouts: the ship will contact you. the ship will contact you. The scout is in the back of the abdominal cavity. " ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+!Exercise
+ 				if (command==3) print "Eyebrows are raised and pulled towards each other. " ;  !
+
+!Joke
+if (command==4) print "Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
 ],
+ 
 has light;
 
 
@@ -51,160 +53,191 @@ Object Conflict "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost:
-Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward
-" ;
+				if (command==1) print "Cannot see the asteroids. " ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. " ;  !
 ],
 has light;
 
-Object Goal "Goal" Conflict
+
+
+
+
+
+Object Goal "Goal" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost:
-Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward
-" ;
+				if (command==1) print "The scout has to detect astreroids" ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "Pull the abdominal muscles backwards so that the small intestine is moved inward." ;  !
 ],
 has light;
 
-Object Motive "Motive" Conflict
+
+
+
+
+Object Motive "Motive"
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
+				if (command==1) print "The scout wants to have controll." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Climax "Climax" Generator
+
+
+
+
+Object Climax "Climax" 
+    with 
+			description 
+[;
+				if (command==0) print "" ;
+
+!Concept
+				if (command==1) print "He puts together a puzzle." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Risk "Danger" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
+				if (command==1) print "avoid looking at the asteroids," ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Risk "Danger" Climax
+
+
+
+Object Struggle "Struggle" ! Climax
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
+				if (command==1) print "Keep his own world intact." ;
 
 !Story
  				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+!Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Struggle "Struggle" Climax
+
+
+
+
+Object Resolution "residual resolution emotion" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
+				if (command==1) print "he is in his own world." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
 
 
-Object Resolution "residual resolution emotion" Generator
+
+Object Emotion "residual resolution emotion" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
+				if (command==1) print "You as a captain feel sadness that you are lost." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Emotion "residual resolution emotion" Resolution
+
+
+
+
+
+Object Change "Change" ! Resolution
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
+				if (command==1) print "The captain fires the scout and replace him." ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
 has light;
 
 
-Object Change "Change" Resolution
-    with 
-			description 
-[;
-				if (command==0) print "setup" ;
 
-!Concept
-				if (command==1) print "At the back of the abdominal cavity, the scout is curled up. He feels sadness because he doesn't see the asteroids. He puts together a puzzle to avoid looking at the asteroids. He can stand on the puzzle to get higher up. You as a captain feel sadness that you are lost: Eyebrows are raised and pulled towards each other. The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. Pull the abdominal muscles backwards so that the small intestine is moved inward" ;
 
-!Story
- 				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
-],
-has light;
+
 
 
 [ ConceptSub;
 command = 1;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -219,7 +252,7 @@ PlayerTo(Change,2);
 [ StorySub;
 command = 2;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -234,7 +267,21 @@ PlayerTo(Change,2);
 [ ExerciseSub;
 command = 3;
 PlayerTo(Setup,2);
-PlayerTo(Conflict,2,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+[ JokeSub;
+command = 4;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
 PlayerTo(Goal,2);
 PlayerTo(Motive,2);
 PlayerTo(Climax,2);
@@ -247,7 +294,7 @@ PlayerTo(Change,2);
 
 Verb "concept" * -> Concept;
 Verb "story" * -> Story;
-Verb "Say please: 1, 2, 3: Please, please, please.  Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." * -> Exercise;
+Verb "joke" * -> Joke;
 
 [ Initialise;
     location = Generator;
