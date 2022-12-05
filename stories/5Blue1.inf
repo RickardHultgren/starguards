@@ -30,12 +30,10 @@ Object Setup "Setup"
 !Story
  				if (command==2) print "Story" ;
 !Exercise
- 				if (command==3) print "Eyebrows are pulled together and down. The lips are tightened to a narrow line. Focus on one point in the liver. Now pull out the point that sticks to the liver. On exhalation, say "S" in tension: 1, 2, 3: Sss, sss, sss."" ;  !
+ 				if (command==3) print "Eyebrows are pulled together and down. The lips are tightened to a narrow line. Focus on one point in the liver. Now pull out the point that sticks to the liver. On exhalation, say S in tension: 1, 2, 3: Sss, sss, sss." ;  !
 
 !Joke
-if (command==4) print Type: Incongruence. Violation: Compare, possibly compare complicated. Benign: No evil happens. Possibly finish simply but with contrast.
- 
-" ;  !
+				if (command==4) print "Type: Incongruence. Violation: Compare, possibly compare complicated. Benign: No evil happens. Possibly finish simply but with contrast." ;  !
 ],
  
 has light;

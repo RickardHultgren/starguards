@@ -30,7 +30,7 @@ Object Setup "Setup"
 !Story
  				if (command==2) print "Story" ;
 !Exercise
- 				if (command==3) print "Eyebrows are raised and parted from each other. The mouth opens. Focus on one point in the perineum. Pull in the seat muscles so that the point is raised. Say "No": 1, 2, 3: No, no, no." ;  !
+ 				if (command==3) print "Eyebrows are raised and parted from each other. The mouth opens. Focus on one point in the perineum. Pull in the seat muscles so that the point is raised. Say No: 1, 2, 3: No, no, no." ;  !
 
 !Joke
 if (command==4) print "Type: The superiority formula. Benign: Others are superior. Violation: The comedian is worse." ;  !
