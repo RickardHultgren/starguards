@@ -18,7 +18,7 @@ Global command = 0 ;
 
 
 
-Object Setup "Setup" 
+Object Setup " " ! "Setup" 
     with 
 			description 
 [;
@@ -46,7 +46,7 @@ has light;
 
 
 
-Object Conflict "Conflict" 
+Object Conflict " " ! "Conflict" 
     with 
 			description 
 [;
@@ -67,7 +67,7 @@ has light;
 
 
 
-Object Goal "Goal" 
+Object Goal " " ! "Goal" 
     with 
 			description 
 [;
@@ -87,7 +87,7 @@ has light;
 
 
 
-Object Motive "Motive"
+Object Motive " " ! "Motive"
     with 
 			description 
 [;
@@ -108,7 +108,7 @@ has light;
 
 
 
-Object Climax "Climax" 
+Object Climax " " ! "Climax" 
     with 
 			description 
 [;
@@ -129,7 +129,7 @@ has light;
 
 
 
-Object Risk "Danger" ! Climax
+Object Risk " " ! "Danger" ! Climax
     with 
 			description 
 [;
@@ -149,7 +149,7 @@ has light;
 
 
 
-Object Struggle "Struggle" ! Climax
+Object Struggle " " ! "Struggle" ! Climax
     with 
 			description 
 [;
@@ -170,7 +170,7 @@ has light;
 
 
 
-Object Resolution "residual resolution emotion" 
+Object Resolution " " ! "residual resolution emotion" 
     with 
 			description 
 [;
@@ -190,7 +190,7 @@ has light;
 
 
 
-Object Emotion "residual resolution emotion" ! Resolution
+Object Emotion " " ! "residual resolution emotion" ! Resolution
     with 
 			description 
 [;
@@ -212,7 +212,7 @@ has light;
 
 
 
-Object Change "Change" ! Resolution
+Object Change " " ! "Change" ! Resolution
     with 
 			description 
 [;

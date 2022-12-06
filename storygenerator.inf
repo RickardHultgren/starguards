@@ -18,7 +18,7 @@ Global command = 0 ;
 
 
 
-Object Setup "Setup" 
+Object Setup " " ! "Setup" 
     with 
 			description 
 [;
@@ -42,7 +42,7 @@ has light;
 
 
 
-Object Conflict "Conflict" 
+Object Conflict " " ! "Conflict" 
     with 
 			description 
 [;
@@ -58,7 +58,7 @@ Object Conflict "Conflict"
 ],
 has light;
 
-Object Goal "Goal" Conflict
+Object Goal " " ! "Goal" Conflict
     with 
 			description 
 [;
@@ -74,24 +74,7 @@ Object Goal "Goal" Conflict
 ],
 has light;
 
-Object Motive "Motive" Conflict
-    with 
-			description 
-[;
-				if (command==0) print "setup" ;
-
-!Concept
-				if (command==1) print "setup concept" ;
-
-!Story
- 				if (command==2) print "Story" ;
-  !Exercise
- 				if (command==3) print "Exercise" ;  !
-],
-has light;
-
-
-Object Climax "Climax" Generator
+Object Motive " " ! "Motive" Conflict
     with 
 			description 
 [;
@@ -108,7 +91,7 @@ Object Climax "Climax" Generator
 has light;
 
 
-Object Risk "Danger" Climax
+Object Climax " " ! "Climax" Generator
     with 
 			description 
 [;
@@ -125,7 +108,24 @@ Object Risk "Danger" Climax
 has light;
 
 
-Object Struggle "Struggle" Climax
+Object Risk " " !"Danger" Climax
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "setup concept" ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Exercise" ;  !
+],
+has light;
+
+
+Object Struggle " " ! "Struggle" Climax
     with 
 			description 
 [;
@@ -144,7 +144,7 @@ has light;
 
 
 
-Object Resolution "residual resolution emotion" Generator
+Object Resolution " " ! "residual resolution emotion" Generator
     with 
 			description 
 [;
@@ -161,7 +161,7 @@ Object Resolution "residual resolution emotion" Generator
 has light;
 
 
-Object Emotion "residual resolution emotion" Resolution
+Object Emotion " " ! "residual resolution emotion" Resolution
     with 
 			description 
 [;
@@ -178,7 +178,7 @@ Object Emotion "residual resolution emotion" Resolution
 has light;
 
 
-Object Change "Change" Resolution
+Object Change " " ! "Change" Resolution
     with 
 			description 
 [;
