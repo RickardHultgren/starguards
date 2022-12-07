@@ -18,14 +18,44 @@ Global command = 0 ;
 
 
 
+
+
+
+
+
+Class   keyCharacter
+ has    animate
+;
+
+keyCharacter  person2 " " ! "person2"
+    with 
+			description 
+[;
+            "What a beautiful kitten is. Why,
+             it's quite definitely your favourite of the pair, and
+             much prettier than that naughty ";
+        ], has light;
+
+
+
+
+
+
+
+
+
+
 Object Setup " " ! "Setup" 
     with 
 			description 
 [;
 				if (command==0) print "setup" ;
 
+
 !Concept
-				if (command==1) print "The captain shouts: the ship will contact you. the ship will contact you. The scout is in the back of the abdominal cavity. " ;
+				if (command==1) print "The captain shouts: the ship will contact you. the ship will contact you. The scout is in the back of the abdominal cavity. ", PlayerTo(person2,2), " The captain shouts: the ship will contact you. the ship will contact you. The scout is in the back of the abdominal cavity. ";
+
+
 
 !Story
  				if (command==2) print "Story" ;
@@ -297,6 +327,7 @@ Verb "story" * -> Story;
 Verb "joke" * -> Joke;
 
 [ Initialise;
+
     location = Generator;
     "^^^This is the ^";
 ];
