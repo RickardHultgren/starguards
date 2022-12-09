@@ -8,7 +8,7 @@ keyCharacter  IDCharacter " " ! "Captain Wise"
     with 
 			description 
 [;
-            "Captain Wise. Agenda: fullfilling";
+            "Captain Wise. Agenda: fullfilling: 1. Self agenda. 2. Society agenda. Consequences.";
         ], has light;
 
 
@@ -16,5 +16,13 @@ keyCharacter  foeCharacter " " ! "Captain Nice"
     with 
 			description 
 [;
-            "Captain Nice. Agenda: 1. Sex/peruating the spiecies. 2. Self survival. ";
+            "Captain Nice. Agenda: 1. Sex/peruating the spiecies. 2. Self survival. 3. Djungle drives/laws: preprogrammed/instincts. triple fff. ";
+        ], has light;
+
+
+keyCharacter  keyCharacter " " ! "book"
+    with 
+			description 
+[;
+            "Book.";
         ], has light;
