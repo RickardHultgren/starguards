@@ -1,0 +1,26 @@
+!Programmed in the Inform6 language,
+Constant Story "The Star Guards";
+Constant Headline "^An Interactive Fiction^";
+
+Include "Parser";
+Include "VerbLib";
+Include "Grammar";
+Include "/input/characters.inf";
+!Include "/input/characters.inf";
+!Include "/input/characters.inf";
+!Include "/input/characters.inf";
+!Include "/input/characters.inf";
+!Include "/input/characters.inf";
+!Include "/input/characters.inf";
+
+![ Initialise;
+
+!    location = Generator;
+!    "^^^This is the ^";
+!];
+
+
+
+
+
+

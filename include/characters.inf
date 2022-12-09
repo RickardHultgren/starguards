@@ -4,12 +4,17 @@ Class   keyCharacter
  has    animate
 ;
 
-keyCharacter  person2 " " ! "person2"
+keyCharacter  IDCharacter " " ! "Captain Wise"
     with 
 			description 
 [;
-            "What a beautiful kitten is. Why,
-             it's quite definitely your favourite of the pair, and
-             much prettier than that naughty ";
+            "Captain Wise";
         ], has light;
 
+
+keyCharacter  foeCharacter " " ! "Captain Nice"
+    with 
+			description 
+[;
+            "Captain Nice";
+        ], has light;
