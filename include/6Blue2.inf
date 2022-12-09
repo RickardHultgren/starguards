@@ -5,6 +5,7 @@ Constant Headline "^An Interactive Fiction^";
 Include "Parser";
 Include "VerbLib";
 Include "Grammar";
+Include "/input/characters.inf";
 
 Object Generator "story"
     with description
@@ -25,15 +26,15 @@ Object Setup " " ! "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The Captain: What are the options? What options are there? What options are there? The marksman sleeps in the liver." ;
+				if (command==1) print "The Captain: What else? What else? What else?  " ;
 
 !Story
  				if (command==2) print "Story" ;
 !Exercise
- 				if (command==3) print "Eyebrows are pulled together and down. The lips are tightened to a narrow line. Focus on one point in the liver. Now pull out the point that sticks to the liver. On exhalation, say S in tension: 1, 2, 3: Sss, sss, sss." ;  !
+ 				if (command==3) print "Your face relaxes. Cheeks are pulled up. Focus on one point in the heart. Open the heart so that the light of the point is scattered in all directions. Say thank you: 1, 2, 3: Thank you, thank you, thank you. " ;  !
 
 !Joke
-				if (command==4) print "Type: Incongruence. Violation: Compare, possibly compare complicated. Benign: No evil happens. Possibly finish simply but with contrast." ;  !
+if (command==4) print "Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
 ],
  
 has light;
@@ -53,13 +54,12 @@ Object Conflict " " ! "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The marksman is awakened by the scout's tricks, and becomes angry.^ - There is incongruity between sleep and the asteroid threat.
- " ;
+				if (command==1) print "After a rather powerful attack on asteroids, there are now only a few left. These are easy to destroy. " ;
 
 !Story
  				if (command==2) print "Story" ;
   !Exercise
- 				if (command==3) print "The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. " ;  !
+ 				if (command==3) print "What in what you're doing right now has to do with your purpose? How does it fulfill your purpose? How does it feel to fulfill the purpose? How does that sound? What does it look like? How does it feel to be touched? How heavy is it? Listen to the purpose." ;  !
 ],
 has light;
 
@@ -75,7 +75,7 @@ Object Goal " " ! "Goal"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The marksman has to shoot at the asteroids." ;
+				if (command==1) print "The marksman has to destroy the asteroids" ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -95,7 +95,7 @@ Object Motive " " ! "Motive"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The marksman wants points" ;
+				if (command==1) print "The marksman has to reduce the anger." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -116,7 +116,7 @@ Object Climax " " ! "Climax"
 				if (command==0) print "" ;
 
 !Concept
-				if (command==1) print "He looks out over asteroids and spaceships. He sends radio signals to other spaceships:" ;
+				if (command==1) print "The marksman is now moving to the heart to save cannon energy.  " ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -137,7 +137,7 @@ Object Risk " " ! "Danger" ! Climax
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "Premise: The ship transmitter has process. 1, 2, 3. The ship transmitter has process. The ship transmitter has process." ;
+				if (command==1) print "From the heart, he can access the asteroids himself." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -157,7 +157,7 @@ Object Struggle " " ! "Struggle" ! Climax
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "-Setup context: The ship receiver has setup. 1, 2, 3. The ship receiver has been setup. The ship receiver has been setup." ;
+				if (command==1) print "The marksman sends out radio signals that say: Use: Request from the Ship Transmitter to change the process. 1. 2. 3. Request from the Ship Transmitter to change the process. Request from the Ship Transmitter to change the process. " ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -178,7 +178,7 @@ Object Resolution " " ! "residual resolution emotion"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "-Incongruent punch line about the consequences binds Tranimotottor and receivers together." ;
+				if (command==1) print "The shooter takes out a boxing glove and puts it on his right hand. The chemist pumps up the gauntlet which becomes colossally large. Then the shooter knocks down the asteroids one by one. Hit and miss, he says. Say: Hit, hit, miss. Hit, hit, miss. Hit, hit, miss. Respond to criticism." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -198,10 +198,11 @@ Object Emotion " " ! "residual resolution emotion" ! Resolution
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "You as a captain feel anger you must shoot at so many asteroids." ;
+				if (command==1) print "The captain feel happiness that the worst is over, and that you recognize that things are going in the right direction" ;
 
 !Story
- 				if (command==2) print "Story" ;
+ 				if (command==2) print "Request from the Ship Recipient to change criteria for context. 1. 2. 3. Request from the Ship Recipient to change context criteria. Request from the Ship Recipient to change criteria for context.
+All the spaceships involved are responding to the request." ;
   !Exercise
  				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
 ],
@@ -220,7 +221,7 @@ Object Change " " ! "Change" ! Resolution
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The captain shows the funny part to resolve the anger." ;
+				if (command==1) print "The captain " ;
 
 !Story
  				if (command==2) print "Story" ;

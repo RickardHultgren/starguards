@@ -5,6 +5,7 @@ Constant Headline "^An Interactive Fiction^";
 Include "Parser";
 Include "VerbLib";
 Include "Grammar";
+Include "/input/characters.inf";
 
 Object Generator " " ! "story"
     with description

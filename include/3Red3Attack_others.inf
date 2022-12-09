@@ -5,6 +5,7 @@ Constant Headline "^An Interactive Fiction^";
 Include "Parser";
 Include "VerbLib";
 Include "Grammar";
+Include "/input/characters.inf";
 
 Object Generator "story"
     with description
@@ -25,15 +26,16 @@ Object Setup " " ! "Setup"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The Captain: Was this what you wanted? Was this what you wanted? Was this what you wanted?" ;
+				if (command==1) print "The Captain: What do you know? What do you know? What do you know? 
+The scout then goes to the perineum." ;
 
 !Story
  				if (command==2) print "Story" ;
 !Exercise
- 				if (command==3) print "Eyebrows are raised and parted from each other.  The mouth opens. Focus on one point in the middle yard. Pull out the seat muscles so that the point is lowered. Say Oh: 1, 2, 3: Oh, oh, oh. Your spaceship is retreating." ;  !
+ 				if (command==3) print "Eyebrows are raised and parted from each other. The mouth opens. Focus on one point in the middle yard. Pull in the seat muscles so that the point is raised. Say No: 1, 2, 3: No, no, no. " ;  !
 
 !Joke
-if (command==4) print "Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+if (command==4) print " Benign: No evil happens.Violation: Ambivalent between two assumptions." ;  !
 ],
  
 has light;
@@ -53,7 +55,7 @@ Object Conflict " " ! "Conflict"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The chemist feels enthusiasm." ;
+				if (command==1) print "The scout is surprised by all the asteroids he sees. He's scared. " ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -74,7 +76,7 @@ Object Goal " " ! "Goal"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The chemist supplies the ship" ;
+				if (command==1) print "He picks out devil-stick. Feeling ambivalent. With the angle pointers, he pinches his devil-stick which is also an office-rod." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -94,7 +96,7 @@ Object Motive " " ! "Motive"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The scout wants the ship to work." ;
+				if (command==1) print "The scout wants to have controll." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -115,7 +117,7 @@ Object Climax " " ! "Climax"
 				if (command==0) print "" ;
 
 !Concept
-				if (command==1) print "he energizes and converts tension into relaxation." ;
+				if (command==1) print "He performs the devil-stick trick, tick-tock. Each time the command rod hits one of the angle pointers, a sound occurs in the rod. It sounds light or dark depending on which rod hits the rod. That is, as if it would be ambivalent about what tone it should have. The scout rolls a dice to decide which way to point. " ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -136,7 +138,7 @@ Object Risk " " ! "Danger" ! Climax
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "to get signal" ;
+				if (command==1) print "The shooter shoots in different directions. " ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -156,7 +158,7 @@ Object Struggle " " ! "Struggle" ! Climax
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "feeling good" ;
+				if (command==1) print "The area around the ship is unknown to him. The chemist makes sure that there is fuel for laser beams in the cannon.  " ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -177,7 +179,7 @@ Object Resolution " " ! "residual resolution emotion"
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "He is present" ;
+				if (command==1) print "The scout does not bother if other spaceships in the cluster meet." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -197,7 +199,7 @@ Object Emotion " " ! "residual resolution emotion" ! Resolution
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "enthusizasm" ;
+				if (command==1) print "You as a captain feel ambivalent." ;
 
 !Story
  				if (command==2) print "Story" ;
@@ -219,7 +221,7 @@ Object Change " " ! "Change" ! Resolution
 				if (command==0) print "setup" ;
 
 !Concept
-				if (command==1) print "The captain is very happy" ;
+				if (command==1) print "The captain fires the scout and replace him." ;
 
 !Story
  				if (command==2) print "Story" ;
