@@ -8,17 +8,35 @@ keyCharacter  IDCharacter " " ! "Captain Wise"
     with 
 			description 
 [;
-            "Captain Wise. Agenda: fullfilling: 1. Self agenda. 2. Society agenda. Consequences.";
+
+
+!Concept
+				if (command==1) print "Captain Wise. Agenda: 1. Self fullfilling agenda. 2. Society agenda. Consequences.";
+
+!Story
+				if (command==2) print "Captain Wise.";
+
+!Story character
+				if (command==21) print "Captain Wise has a short stature, more white hair than head and a pair of glasses. The clothes are two big and the voice is thin.";
         ], has light;
+
+
+
 
 
 keyCharacter  foeCharacter " " ! "Captain Nice"
     with 
 			description 
 [;
-            "Captain Nice. Agenda: 1. Sex/peruating the spiecies. 2. Self survival. 3. Djungle drives/laws: preprogrammed/instincts. triple fff. ";
-        ], has light;
+!Concept
+				if (command==1) print "Captain Nice. Agenda: 1. Sex/peruating the spiecies. 2. Self survival. 3. Djungle drives/laws: preprogrammed/instincts. triple fff. ";
 
+!Story
+				if (command==2) print "Captain Nice.";
+
+!Story character
+				if (command==21) print "Captain Nice is twice as tall as the average man and nearly five times as wide.Teh clothes are always too small. Nice has a deep voice and wears a pink bow tie. ";
+        ], has light;
 
 keyCharacter  keyCharacter " " ! "book"
     with 

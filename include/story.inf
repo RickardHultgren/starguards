@@ -13,11 +13,314 @@ Include "/input/characters.inf";
 !Include "/input/characters.inf";
 !Include "/input/characters.inf";
 
-![ Initialise;
 
-!    location = Generator;
-!    "^^^This is the ^";
-!];
+Global command = 0 ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Object Setup " " ! "Setup" 
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+
+!Concept
+				if (command==1) print "Ship has Captain Nice as a primar captain and Captain Wise as the senior captain on call. If an asteroid comes the primar captain asks the on call captain what to do. If the on call captain does not respond Captain Nice looks into the recipe book if there is solution. If not, Captain Nice starts screeming at the crew. Then Admiral Watchman shifts between 3 modes: fight, flite and freesze. If recipe book has a solution the book gives orders to the crew. If Captain Wise has a solution it takes a while for him to formulate the answer.   ";
+
+
+
+!Story
+ 				if (command==2) print "Story" ;
+!Exercise
+ 				if (command==3) print "" ;  !
+
+!Joke
+if (command==4) print "Type: Revers. 1. Choose everyday, relatable situations. 2. Start by writing the twist first and then work backwards from there. 3. Keep the installation appropriately ambiguous. Violation: Twist." ;  !
+],
+ 
+has light;
+
+
+
+
+
+
+
+
+
+Object Conflict " " ! "Conflict" 
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "Cannot see the asteroids. " ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "The mouth opens, the corners of the mouth are brought downwards and the lower lip pokes outwards. " ;  !
+],
+has light;
+
+
+
+
+
+
+Object Goal " " ! "Goal" 
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "The scout has to detect astreroids" ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Pull the abdominal muscles backwards so that the small intestine is moved inward." ;  !
+],
+has light;
+
+
+
+
+
+Object Motive " " ! "Motive"
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "The scout wants to have controll." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Climax " " ! "Climax" 
+    with 
+			description 
+[;
+				if (command==0) print "" ;
+
+!Concept
+				if (command==1) print "He puts together a puzzle." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Risk " " ! "Danger" ! Climax
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "avoid looking at the asteroids," ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+Object Struggle " " ! "Struggle" ! Climax
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "Keep his own world intact." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+!Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+Object Resolution " " ! "residual resolution emotion" 
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "he is in his own world." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+Object Emotion " " ! "residual resolution emotion" ! Resolution
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "You as a captain feel sadness that you are lost." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+
+Object Change " " ! "Change" ! Resolution
+    with 
+			description 
+[;
+				if (command==0) print "setup" ;
+
+!Concept
+				if (command==1) print "The captain fires the scout and replace him." ;
+
+!Story
+ 				if (command==2) print "Story" ;
+  !Exercise
+ 				if (command==3) print "Say please: 1, 2, 3: Please, please, please." ;  !
+],
+has light;
+
+
+
+
+
+
+
+[ ConceptSub;
+command = 1;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+
+[ StorySub;
+command = 2;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+
+[ ExerciseSub;
+command = 3;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+[ JokeSub;
+command = 4;
+PlayerTo(Setup,2);
+PlayerTo(Conflict,2);
+PlayerTo(Goal,2);
+PlayerTo(Motive,2);
+PlayerTo(Climax,2);
+PlayerTo(Risk,2);
+PlayerTo(Struggle,2);
+PlayerTo(Resolution,2);
+PlayerTo(Emotion,2);
+PlayerTo(Change,2);
+];
+
+Verb "concept" * -> Concept;
+Verb "story" * -> Story;
+Verb "joke" * -> Joke;
+
+[ Initialise;
+
+    location = Generator;
+    "^^^This is the ^";
+];
+
+
+
+
 
 
 
